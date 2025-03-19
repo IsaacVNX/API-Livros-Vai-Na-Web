@@ -3,9 +3,9 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route("/femandaopix")
+@app.route("/")
 def manda_o_pix():
-    return "<h2>SE TEM DOR DE CUTUVELO, TÁ DEVENDO</h2>"
+    return "<h2>SEJA BEM VINDO!!!</h2>"
 
 def init_db():
     with sqlite3.connect("database.db") as conn:
