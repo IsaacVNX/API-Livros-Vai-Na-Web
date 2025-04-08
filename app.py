@@ -10,7 +10,7 @@ def manda_o_pix():
 
 
 def init_db():
-    with sqlite3.connect("database.db") as conn:
+    with sqlite3.connect("database.db") as conn: 
         conn.execute(
             """
                 CREATE TABLE IF NOT EXISTS LIVROS(
